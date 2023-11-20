@@ -1,8 +1,8 @@
 type Props = {
 	label: string;
 	amount: number;
-	onAmountChange: Function;
-	onCurrencyChange: Function;
+	onAmountChange: (amount: number) => void;
+	onCurrencyChange: (currency: string) => void;
 	currencyOptions: string[];
 	selectedCurrency: string;
 	amountDisabled: boolean;
