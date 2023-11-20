@@ -17,16 +17,10 @@ function App() {
 	const options = Object.keys(currencyInfo);
 
 	const swap = () => {
-		console.log(to, from);
 		setFrom(to);
-		console.log(to, from);
 		setTo(from);
-		console.log(to, from);
-		console.log(amount, convertedAmount);
 		setConvertedAmount(amount);
-		console.log(amount, convertedAmount);
 		setAmount(convertedAmount);
-		console.log(amount, convertedAmount);
 	};
 
 	const convert = () => {
@@ -73,6 +67,7 @@ function App() {
 						</div>
 						<div className=" text-center">
 							<button
+								type="button"
 								onClick={swap}
 								className="btn btn-neutral my-4"
 							>
